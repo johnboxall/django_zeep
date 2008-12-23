@@ -7,6 +7,18 @@ This app ships with some models that will make hooking up zeep a little faster -
 Installation
 ------------
 
+* Download `zeep.sms`:
+
 ``sudo easy_install zeep.sms``
 
-``git clone...``
+* Download `django_zeep`:
+
+``git clone git@github.com:johnboxall/django_zeep.git ``
+
+* Set your Zeep API Key / Secret and a default response in `settings.py`:
+
+``
+ZEEP_KEY = 'find-me-on-the-zeep-website'
+ZEEP_SECRET = 'find-me-on-the-zeep-website'
+ZEEP_DEFAULT_RESPONSE = 'default-response-if-no-rule-is-matched'
+``
