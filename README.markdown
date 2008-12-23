@@ -17,8 +17,8 @@ Installation
 
 * Set your Zeep API Key / Secret and a default response in `settings.py`:
 
-``
+<code>
 ZEEP_KEY = 'find-me-on-the-zeep-website'
 ZEEP_SECRET = 'find-me-on-the-zeep-website'
 ZEEP_DEFAULT_RESPONSE = 'default-response-if-no-rule-is-matched'
-``
+</code>
