@@ -23,8 +23,14 @@ def callback(request):
     # print response
     # Hack just send a message back w/ the response
     # SUBSCRIPTION_UPDATE
-    send_sms(event.uid, response)
+
+    try:
+        send_sms(event.uid, response)
+    except Exception, e:
+        pass
     
+    
+#    print response
     
     return HttpResponse(response, mimetype="text/plain")
 
